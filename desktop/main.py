@@ -49,8 +49,22 @@ elif ans == "help":
     
     if ask_close == "y" or ask_close == "Y":
       quit()
+    elif ask_close == "n" or ask_close == "N":
+      # do nothing to change program
+    elif ask_close == "restart" or ask_close == "res":
+      restart()
     else:
-      # do nothing
+      ask_again_close = input("please select one y or n")
+      
+      if ask_again_close == "y" or "Y":
+        quit()
+      elif ask_again_close == "n" or "N":
+        # do nothing
+      elif aks_again_close == "restart" or "res":
+        restart()
+      else:
+        time.sleep(3)
+        quit()
 elif ans == "res" or ans == "restart":
     restart()
 else:
