@@ -1,5 +1,7 @@
 "use strict";
 
+var d = document;
+
 var Grades = [
     "Grade3",
     "Grade4",
@@ -12,3 +14,12 @@ var Grades = [
     "Grade11",
     "Grade12",
  ];
+
+var input = d.querySelector(".input").value;
+
+if (input == Grades[0]) {
+    gradethree();
+} else if (input == Grades[1]) {
+    gradefour();
+} else {
+}
