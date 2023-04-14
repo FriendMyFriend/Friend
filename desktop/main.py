@@ -1,5 +1,6 @@
 import os
 import sys
+import time
 
 ask = input("Enter math symbol for problem")
 
@@ -30,6 +31,8 @@ elif ask == "help":
   print("* for multiply")
 else:
   print("Sorry not a command please type 'help' for help")
+  time.sleep(4)
+  restart()
 
 def restart():
   python = sys.executable
