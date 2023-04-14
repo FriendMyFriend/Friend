@@ -23,3 +23,9 @@ if (input == Grades[0]) {
     gradefour();
 } else {
 }
+
+function gradethree() {
+}
+
+function gradefour() {
+}
