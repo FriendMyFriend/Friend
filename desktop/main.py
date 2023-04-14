@@ -1,3 +1,6 @@
+import os
+import sys
+
 ask = input("Enter math symbol for problem")
 
 if ask == "+":
@@ -27,3 +30,7 @@ elif ask == "help":
   print("* for multiply")
 else:
   print("Sorry not a command please type 'help' for help")
+
+def restart():
+  python = sys.executable
+  os.execl(python, python, * sys.argv)
