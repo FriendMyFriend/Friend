@@ -1,70 +1,98 @@
 "use strict";
 
-var d = document;
+var d, input, Grades;
 
-var Grades = [
-    "Grade3",
-    "Grade4",
-    "Grade5",
-    "Grade6",
-    "Grade7",
-    "Grade8",
-    "Grade9",
-    "Grade10",
-    "Grade11",
-    "Grade12",
- ];
+d = document;
 
-var input = d.querySelector(".input").value;
+Grades = [
+    "3rd",
+    "4th",
+    "5th",
+    "6th",
+    "7th",
+    "8th",
+    "9th",
+    "10th",
+    "11th",
+    "12th",
+];
 
-if (input == Grades[0]) {
-    gradethree();
-} else if (input == Grades[1]) {
-    gradefour();
-} else if (input == Grades[2]) {
-    gradefive();
-} else if (input == Grades[3]) {
-    gradesix();
-} else if (input == Grades[4]) {
-    gradeseven();
-} else if (input == Grades[5]) {
-    gradeeight();
-} else if (input == Grades[6]) {
-    gradenine();
-} else if (input == Grades[7]) {
-    gradeten();
-} else if (input == Grades[8]) {
-    gradeeleven();
-} else if (input == Grades[9]) {
-    gradetweleve();
-else}
+input = d.querySelector(".input").value;
 
+function check() {
+    switch(input) {
+        case Grades[0]:
+            gradethree();
+        break;
+        case Grades[1]:
+            gradefour();
+        break;
+        case Grades[2]:
+            gradefive();
+        break;
+        case Grades[3]:
+            gradesix();
+        break;
+        case Grades[4]:
+            gradeseven();
+        break;
+        case Grades[5]:
+            gradeeight();
+        break;
+        case Grades[6]:
+            gradenine();
+        break;
+        case Grades[7]:
+            gradeten();
+        break;
+        case Grades[8]:
+            gradeeleven();
+        break;
+        case Grades[9]:
+            gradetweleve();
+        break;
+        default:
+            // do nothing
+        break;
+    }
+}
 
 function gradethree() {
+    d.querySelector(".helper").innerHTML = `<iframe src='3rd.html'></iframe>`;
 }
 
 function gradefour() {
+    d.querySelector(".helper").innerHTML = `<iframe src='4th.html'></iframe>`;
 }
 
 function gradefive() {
+    d.querySelector(".helper").innerHTML = `<iframe src='5th.html'></iframe>`;
 }
 
 function gradesix() {
+    d.querySelector(".helper").innerHTML = `<iframe src='6th.html'></iframe>`;
 }
 
 function gradeseven() {
+    d.querySelector(".helper").innerHTML = `<iframe src='7th.html'></iframe>`;
 }
 
 function gradeeight() {
+    d.querySelector(".helper").innerHTML = `<iframe src='8th.html'></iframe>`;
 }
 
 function gradenine() {
+    d.querySelector(".helper").innerHTML = `<iframe src='9th.html'></iframe>`;
 }
 
 function gradeten() {
+    d.querySelector(".helper").innerHTML = `<iframe src='10th.html'></iframe>`;
 }
+
 function gradeeleven() {
+    d.querySelector(".helper").innerHTML = `<iframe src='11th.html'></iframe>`;
 }
 
 function gradetweleve() {
+    d.querySelector(".helper").innerHTML = `<iframe src='12th.html'></iframe>`;
 }
